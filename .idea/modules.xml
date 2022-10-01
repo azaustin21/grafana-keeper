@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/grafana-keeper.iml" filepath="$PROJECT_DIR$/.idea/grafana-keeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/grafana-postgres.iml" filepath="$PROJECT_DIR$/.idea/grafana-postgres.iml" />
     </modules>
   </component>
 </project>
