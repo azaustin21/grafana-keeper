@@ -1,0 +1,29 @@
+---
+version: '3.1'
+
+services:
+    grafana:
+        image: grafana/grafana:8.2.6
+        ports:
+            - 3000:3000
+        volumes:
+            - ./provisioning:/etc/grafana/provisioning
+        networks:
+            - grafana-postgres
+    postgres:
+        image: postgres
+        restart: always
+        environment:
+            POSTGRES_DB: postgres_keeper
+            POSTGRES_USER: keeper
+            POSTGRES_PASSWORD: keeper
+        networks:
+            - grafana-postgres
+        ports:
+            - 5432:5432
+        hostname: postgres
+        volumes:
+            - ./init_db:/docker-entrypoint-initdb.d/init_db.sh
+networks:
+    grafana-postgres:
+        driver: bridge
