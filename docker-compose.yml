@@ -15,9 +15,9 @@ services:
         image: postgres
         restart: always
         environment:
-            POSTGRES_DB: postgres_keeper
-            POSTGRES_USER: keeper
-            POSTGRES_PASSWORD: keeper
+            POSTGRES_DB: test-db
+            POSTGRES_USER: test-user
+            POSTGRES_PASSWORD: test-pwd
         networks:
             - grafana-postgres
         ports:
