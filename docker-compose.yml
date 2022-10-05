@@ -7,8 +7,8 @@ services:
         ports:
             - 3000:3000
         volumes:
-            - ./provisioning:/etc/provisioning
-            - ./provisioning:/etc/dashboards
+            - ./provisioning:/etc/grafana/provisioning
+            - ./provisioning:/etc/grafana/dashboards
         networks:
             - grafana-postgres
     postgres:

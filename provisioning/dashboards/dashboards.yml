@@ -4,4 +4,4 @@ providers:
   - name: 'Default'
     folder: 'Dashboard folder'
     options:
-      path: /etc/provisioning/dashboards
+      path: /etc/grafana/provisioning/dashboards
