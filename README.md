@@ -1,4 +1,4 @@
-# grafana-keeper
+# grafana-postgres
 
 Connecting a localhost Grafana dashboard to both a local postgres DB container and external DB.
 
